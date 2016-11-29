@@ -1,0 +1,109 @@
+Através de alguns tutoriais, vídeos e outras fontes de informações, irei adquirindo os conhecimentos guardados aqui neste arquivo.
+
+2 Tipos de boletos:
+
+ - com Registro: há registro antecipado do boleto no banco do cedente
+ - sem Registro: pode ser preenchido à mão. O que importa são os dados contidos na numeração e o cód. de barras
+
+Remessas e retornos
+
+Tipos de boletos: 
+CNAB 240 , CNAB 400
+
+Sacado = quem paga
+Cedente = quem recebe
+
+Id do boleto ou número de remessa = número sequencial dos boletos já emitidos pela empresa apenas para controle próprio
+
+carteira de cobrança = registro genérico no banco do cedente para receber cobranças
+
+Problemas do sem registro:
+- segurança 
+- facil manipulacao dos dados e do código de barras através de programas espalhados na internet
+
+Podemos fazer a criação de boletos interagindo direto com o banco ou interagindo com sistemas intermediários de pgto como uol, pagseguro ou sistemas especialistas de boletos
+
+Sistemas externos para emissão de boletos:
+- cobre gratis
+- assaas
+- bling
+- conta azul
+- procurar sistemas de nota fiscal e boletos registrados com api
+- gerencianet
+- superlogica
+- boletofast
+- boleto simples
+
+
+
+
+.www.bb.com.br/leiautes
+
+http://www.bb.com.br/pbb/pagina-inicial/aplicativos-bb/leiautes#/
+
+http://www.bb.com.br/docs/pub/inst/dwn/tutorialProprio.pdf
+
+
+Contato do banco do Brasil: 30030500
+
+
+carteira registrada ou sem registro.
+
+tem que registrar a carteira e cada boleto.
+
+carteira registrada tem um número padrão.
+
+
+remessa
+
+pode ser encaminhado através do gerenciador financeiro.
+
+pode ser posterior ao pagamento.
+
+
+----------------------------------
+
+entrar em contato com a agencias.
+
+manual orientações técnicas
+http://www.bb.com.br/docs/pub/emp/empl/dwn/Orientacoes.pdf
+
+http://www.bb.com.br/pbb/pagina-inicial/empresarial/produtos-e-servicos/cash-management/comercio-eletronico#/
+
+http://www.bb.com.br/portalbb/page44,3766,18879,0,0,1,2.bb
+
+http://www.bb.com.br/docs/pub/emp/mpe/espeboletobb.pdf
+
+http://www.bb.com.br/docs/pub/inst/dwn/tutorialCobWeb.pdf
+
+http://www.bb.com.br/docs/pub/inst/dwn/tutorialProprio.pdf
+
+http://www.bb.com.br/pbb/pagina-inicial/empresas/produtos-e-servicos/pagamentos-e-recebimentos/organizar-meus-recebimentos/cobrancas#/
+
+http://www14.bancobrasil.com.br/office/plugins/cbr/
+
+http://www.bb.com.br/portalbb/page44,3766,18879,0,0,1,2.bb
+
+http://www.bb.com.br/pbb/pagina-inicial/empresas/produtos-e-servicos/pagamentos-e-recebimentos/organizar-meus-recebimentos/cobrancas#/
+
+
+
+
+Fontes:
+
+http://superlogica.com/o-fim-do-boleto-sem-registro/
+
+http://github.com/manoelcampos/Retorno-BoletoPHP
+
+https://github.com/andersondanilo/CnabPHP
+
+http://www.bb.com.br/docs/pub/emp/mpe/dwn/TitulosRemessa.pdf
+
+http://boletophp.com.br
+
+https://vhsys.com.br/boleto-banco-do-brasil/
+
+
+Próximos passos:
+
+Estudar o sistema que usamos hoje. com emissão através de uma url do bb
