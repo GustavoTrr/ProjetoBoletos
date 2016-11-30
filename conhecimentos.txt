@@ -63,6 +63,46 @@ pode ser posterior ao pagamento.
 
 ----------------------------------
 
+Testes realizados pelo sistema Wescola
+
+
+Meios de obter retorno do bb
+
+urlInforma = para receber confirmação de trasação finalizada no site do bb (não é confirmação de pgto)
+
+acionar Formulário sonda = para ver a liquidação do compromisso (se efetivamente foi pago)
+
+aguardar a disponibilização de arquivo retorno no dia útil seguinte ao pagamento.
+"Diariamente é disponibilizado arquivo retorno (RCB001 / CBR643 / CNAB240) com
+as informações de todos os pagamentos realizados no dia anterior. Por meio desse
+arquivo a loja dará o tratamento necessário para confirmar os pagamentos
+recebidos." (Retirado da documentação oficial bb: http://www.bb.com.br/docs/pub/emp/empl/dwn/Orientacoes.pdf)
+
+
+testar em que momento o boleto é gerado!
+Testar todo o ciclo de vida dele até achar!
+Isso pode ser conferido dentro do html do Formulário enviado ao bb/mpag, pela variável "tpPagamento"
+
+---------------------
+
+Lições tiradas:
+
+1 - Apesar de termos o form enviado para mpag para gerar o boleto, se a var "tpPagamento" for "21" (que representa 2ª via)
+os dados inseridos, não serão levados em consideração para alteração no boleto retornado.
+
+2 - Apesar disto, os dados enviados neste form devem estar formatados corretamente, como que mostrando que há uma validação da forma dos dados no servidor do banco 
+antes da interpretação deles.
+
+3 - O site indicado pela documentação para envio do form para a troca de informações com o banco é: https://mpag.bb.com.br/site/mpag/
+* Porém estávamos utilizando https://www16.bb.com.br/site/mpag/ sem nenhum problema
+
+4 - Descrição no cabeçalho da página do boleto: [bb.com.br] - Boleto gerado pelo sistema MPAG (2a Via). 30/11/2016 08:27:06 (dia e hora em que fiz a requisição pelo form)
+
+5 - Na primeira vez que o aluno clica para exibir o boleto no wescolas, o form que é enviado para mpag, vai com a var "tpPagamento" = "2"
+a partir da segunda vez em diante que o aluno clica para visualizar o boleto, a var "tpPagamento" vai com o valor "21"
+
+----------------------------------
+
 entrar em contato com a agencias.
 
 manual orientações técnicas
